@@ -8,7 +8,6 @@ disp(strcat('Total files in process queue: ', int2str(numOfFiles)));
 for fileIndex=1:numOfFiles
 st=files(fileIndex).name;
 disp(strcat('Processing file: ', st));
-%%resultFilename = sprintf('elemental_%d.bmp',fileIndex-1);
 resultFilename = strcat('elemental_',st(7),st(8),st(9),st(10),'.bmp');
 tic
 
